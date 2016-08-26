@@ -47,3 +47,7 @@ img {
 .btn {
   margin-top: 10px;
 }
+
+.col-sm-3 {
+  border-right: 1px solid whitesmoke;
+}

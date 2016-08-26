@@ -4,11 +4,12 @@
 <div class="col-sm-6">
   <h4>{{restaurant.name}}</h4>
   <h5>{{restaurant.neighborhood}}</h5>
-  <p>{{restaurant.notes}}</p>
-  
-  {{#if restaurant.cartIncludes}}
-    <hr>
-    <h5>{{restaurant.name}} has been added to your favorite places</h5>
+  <p>"{{restaurant.notes}}"</p>
+  <h5>Avg cost for a family of 3:</h5>
+  <p>${{restaurant.price}}</p>
+
+  {{#if restaurant.inFavorites}}
+    <h5>This has been added to your favorite places</h5>
   {{else}}
     <button class="btn btn-default" {{action 'addToFavs' restaurant}}>Add to my favorites</button>
   {{/if}}

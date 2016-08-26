@@ -1,6 +1,7 @@
+
 <div class="row">
 {{#each favorites.places as |place|}}
-  <div class="col-sm-2">
+  <div class="col-sm-3">
     <h3>{{place.name}}</h3>
   </div>
   {{/each}}
@@ -8,7 +9,7 @@
 
 <div class="row">
   {{#each favorites.places as |place|}}
-    <div class="col-sm-2">
+    <div class="col-sm-3">
       <p>{{place.notes}}</p>
     </div>
   {{/each}}
@@ -16,8 +17,15 @@
 
 <div class="row">
   {{#each favorites.places as |place|}}
-    <div class="col-sm-2">
-      <h4>Avg cost per person:{{place.price}}</h4>
+    <div class="col-sm-3">
+      <p>${{place.price}}/family of 3</p>
+    </div>
+  {{/each}}
+</div>
+<div class="row">
+  {{#each favorites.places as |place|}}
+    <div class="col-sm-3">
+      <p>${{place.style}}</p>
     </div>
   {{/each}}
 </div>

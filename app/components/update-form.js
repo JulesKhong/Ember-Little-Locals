@@ -9,7 +9,8 @@ export default Ember.Component.extend({
         notes: this.get('notes'),
         img: this.get('img'),
         location: this.get('location'),
-        style: this.get('style')
+        style: this.get('style'),
+        price: this.get('price')
       };
       this.sendAction('update', restaurant, params);
     }

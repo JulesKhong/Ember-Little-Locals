@@ -26,6 +26,10 @@
       <label for="style">Cuisine style:</label>
       {{input value=style id="style"}}
     </div>
+    <div class="form-group">
+      <label for="price">Avg cost for a family of 3:</label>
+      {{input value=price id="price"}}
+    </div>
     <button class="btn btn-default"{{action 'saveRestaurant'}}>Save Restaurant</button>
   </form>
   <button class="btn btn-default" {{action 'hideRestaurantForm'}}>Cancel</button>

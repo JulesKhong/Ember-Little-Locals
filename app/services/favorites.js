@@ -6,14 +6,7 @@ export default Ember.Service.extend({
   add(place) {
     this.get('places').pushObject(place);
   },
-  includes(place) {
-    return this.get('places').includes(place);
+  includes(restaurant) {
+    return this.get('places').includes(restaurant);
   }
-  // avgRating: Ember.computed('restaurant.reviews.[]', function() {
-  //   var runningTotal = 0;
-  //   this.get('restaurant.reviews').forEach(function(restaurant){
-  //     runningTotal += restaurant.get('rating');
-  //   });
-  //   return
-  // })
 });
