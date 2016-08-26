@@ -26,6 +26,6 @@
   "reviews": [{
     "rating": "5",
     "comments": "I loved this place! so good, and my kid thought it was awesome. The whole family enjoyed the meal, and I felt like a grown up again",
-    "price": "5"
+    "price": 5
     }]
 }
