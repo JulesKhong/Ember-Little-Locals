@@ -1,0 +1,22 @@
+<hr>
+{{#if showReviewForm}}
+<div class="col-sm-12">
+  <hr>
+    <form>
+      <div class="form-group">
+        <label for="rating">Rating(1-5):</label>
+        {{input value=rating id="rating"}}
+      </div>
+      <div class="form-group">
+        <label for="comments">Comments:</label>
+        {{textarea value=comments id="comments"}}
+      </div>
+      <button class="btn btn-default" {{action 'saveReview'}}>Submit review</button>
+    </form>
+    <button class="btn btn-default" {{action 'hideReviewForm'}}>Cancel</button>
+</div>
+  {{else}}
+    <hr>
+    <button class="btn btn-default"{{action 'showReviewForm'}}>Write a review</button>
+  {{/if}}
+<hr>

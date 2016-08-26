@@ -1,10 +1,35 @@
 .display-3 {
   text-align: center;
-}
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  font-family: "scriptorama",sans-serif;}
 .lead {
   text-align: center;
+  letter-spacing: 1px;
+  line-height: 1em;
 }
 
 img {
   width: 100%;
+}
+
+.jumbotron {
+  background-image: url("/assets/images/coffee2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  margin-top: 0;
+  margin-bottom: 2%;
+  color: white;
+}
+
+.navbar {
+  margin-bottom: 0;
+  margin-top: 0;
+  background: white;
+  border: none;
+}
+
+.navbar-brand a {
+  color: grey;
 }

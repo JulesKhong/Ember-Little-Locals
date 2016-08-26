@@ -1,0 +1,8 @@
+<div class="col-sm-12">
+  {{#each restaurant.reviews as |review|}}
+  <hr>
+  <h5>REVIEW:</h5>
+    <p>{{review.rating}}</p>
+    <p>Notes: {{review.comments}}</p>
+  {{/each}}
+</div>
