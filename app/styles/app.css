@@ -33,3 +33,8 @@ img {
 .navbar-brand a {
   color: grey;
 }
+
+.star {
+  color: gold;
+  font-size: 1.5em;
+}

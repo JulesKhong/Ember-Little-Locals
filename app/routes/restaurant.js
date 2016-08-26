@@ -12,7 +12,7 @@ export default Ember.Route.extend({
       newReview.save().then(function() {
         return restaurant.save();
       });
-      this.transitionTo('index');
+      this.transitionTo('restaurant', restaurant_id);
     },
   }
 });

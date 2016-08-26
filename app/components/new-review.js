@@ -15,6 +15,7 @@ export default Ember.Component.extend({
         comments: this.get('comments') ? this.get('comments'): "",
         restaurant: this.get('restaurant')
       };
+      this.set('showReviewForm', false);
       this.sendAction('saveReview', params);
     }
   }
