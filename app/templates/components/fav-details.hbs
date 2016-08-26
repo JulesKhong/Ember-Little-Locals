@@ -8,9 +8,17 @@
 </div>
 
 <div class="row">
+{{#each favorites.places as |place|}}
+  <div class="col-sm-3">
+    <img src={{place.img}} alt={{place.name}} />
+  </div>
+  {{/each}}
+</div>
+<hr>
+<div class="row">
   {{#each favorites.places as |place|}}
     <div class="col-sm-3">
-      <p>{{place.notes}}</p>
+      <p>"{{place.notes}}"</p>
     </div>
   {{/each}}
 </div>
@@ -25,7 +33,14 @@
 <div class="row">
   {{#each favorites.places as |place|}}
     <div class="col-sm-3">
-      <p>${{place.style}}</p>
+      <p>{{place.style}}</p>
+    </div>
+  {{/each}}
+</div>
+<div class="row">
+  {{#each favorites.places as |place|}}
+    <div class="col-sm-3">
+      <p>{{place.location}}</p>
     </div>
   {{/each}}
 </div>
