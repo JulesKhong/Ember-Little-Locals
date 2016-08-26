@@ -1,0 +1,45 @@
+<div class="col-sm-5">
+  <img src={{restaurant.img}} alt={{restaurant.name}} />
+</div>
+<div class="col-sm-6">
+  <h4>{{restaurant.name}}</h4>
+  <h5>{{restaurant.neighborhood}}</h5>
+  <p>{{restaurant.notes}}</p>
+  <h5>{{restaurant.price}}</h5>
+</div>
+<hr>
+<div class="col-sm-12">
+  <form>
+  <h4>Update restaurant details</h4>
+  <div class="form-group">
+    <label for="name">Name:</label>
+    {{input value=name id="name" placeholder=restaurant.name}}
+  </div>
+  <div class="form-group">
+    <label for="neighborhood">Neighborhood:</label>
+    {{input value=neighborhood id="neighborhood" placeholder=restaurant.neighborhood}}
+  </div>
+  <div class="form-group">
+    <label for="notes">Notes:</label>
+    {{input value=notes id="notes" placeholder=restaurant.notes}}
+  </div>
+  <div class="form-group">
+    <label for="img">Image URL:</label>
+    {{input value=img id="img" placeholder=restaurant.img}}
+  </div>
+  <div class="form-group">
+    <label for="location">Address:</label>
+    {{input value=location id="location" placeholder=restaurant.location}}
+  </div>
+  <div class="form-group">
+    <label for="style">Cuisine style:</label>
+    {{input value=style id="style" placeholder=restaurant.style}}
+  </div>
+  <div class="form-group">
+    <label for="price">Price:</label>
+    {{input value=price id="price" placeholder=restaurant.price}}
+  </div>
+  <button class="btn btn-default"{{action 'updateRestaurant' restaurant}}>Save Updates</button>
+</form>
+{{#link-to 'admin'}}<button class="btn btn-default">Cancel</button>{{/link-to}}
+</div>

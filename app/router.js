@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('restaurant', {path: '/restaurant/:restaurant_id'});
   this.route('index', {path: '/'});
   this.route('admin');
+  this.route('update-restaurant', {path:'/update-restaurant/:restaurant_id'});
 });
 
 export default Router;

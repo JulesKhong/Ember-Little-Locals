@@ -1,0 +1,7 @@
+<div class="col-sm-3">
+    <img src={{restaurant.img}} alt={{restaurant.name}} />
+    <h5>{{restaurant.name}}</h5>
+    <p>{{restaurant.neighborhood}}</p>
+    {{#link-to 'update-restaurant' restaurant.id}}<button class="btn btn-default">Update details</button>
+{{/link-to}}
+</div>
