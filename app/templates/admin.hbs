@@ -1,0 +1,14 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-3">Little Locals</h1>
+    <p class="lead">Local adventures for the whole crew</p>
+  </div>
+</div>
+<hr>
+<div class="col-sm-12">
+  {{#each model.restaurants as |restaurant|}}
+    {{restaurant-tile restaurant=restaurant}}
+  {{/each}}
+</div>
+<hr>
+{{new-restaurant-form saveRestaurant="saveRestaurant"}}
