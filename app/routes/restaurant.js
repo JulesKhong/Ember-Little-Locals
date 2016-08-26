@@ -1,9 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model() {
-    return Ember.RSVP.hash({
-      restaurants: this.store.findAll('restaurant')
-    });
+  model(params) {
+    return this.store.findRecord('restaurant', params.restaurant_id);
   }
 });
