@@ -9,4 +9,5 @@ export default DS.Model.extend({
   notes: DS.attr(),
   img: DS.attr(),
   reviews: DS.hasMany('review', {async: true}),
+
 });

@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('index', {path: '/'});
   this.route('admin');
   this.route('update-restaurant', {path:'/update-restaurant/:restaurant_id'});
+  this.route('favorites');
 });
 
 export default Router;

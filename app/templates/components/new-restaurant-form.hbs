@@ -1,35 +1,34 @@
 {{#if showRestaurantForm}}
-
-<h4>Add a new restaurant</h4>
-<form>
-  <div class="form-group">
-    <label for="name">Restaurant name:</label>
-    {{input value=name id="name"}}
-  </div>
-  <div class="form-group">
-    <label for="neighborhood">Neighhorhood:</label>
-    {{input value=neighborhood id="neighborhood"}}
-  </div>
-  <div class="form-group">
-    <label for="notes">Notes:</label>
-    {{input value=notes id="notes"}}
-  </div>
-  <div class="form-group">
-    <label for="img">Image URL:</label>
-    {{input value=img id="img"}}
-  </div>
-  <div class="form-group">
-    <label for="location">Address:</label>
-    {{input value=location id="location"}}
-  </div>
-  <div class="form-group">
-    <label for="style">Cuisine style:</label>
-    {{input value=style id="style"}}
-  </div>
-  <button class="btn btn-default"{{action 'saveRestaurant'}}>Save Restaurant</button>
-</form>
-<button class="btn btn-default" {{action 'hideRestaurantForm'}}>Cancel</button>
-
+  <button class="btn btn-default" {{action 'hideRestaurantForm'}}>Hide form</button>
+  <h4>New juicy details</h4>
+  <form>
+    <div class="form-group">
+      <label for="name">Restaurant name:</label>
+      {{input value=name id="name"}}
+    </div>
+    <div class="form-group">
+      <label for="neighborhood">Neighhorhood:</label>
+      {{input value=neighborhood id="neighborhood"}}
+    </div>
+    <div class="form-group">
+      <label for="notes">Notes:</label><br>
+      {{textarea value=notes id="notes"}}
+    </div>
+    <div class="form-group">
+      <label for="img">Image URL:</label>
+      {{input value=img id="img"}}
+    </div>
+    <div class="form-group">
+      <label for="location">Address:</label>
+      {{input value=location id="location"}}
+    </div>
+    <div class="form-group">
+      <label for="style">Cuisine style:</label>
+      {{input value=style id="style"}}
+    </div>
+    <button class="btn btn-default"{{action 'saveRestaurant'}}>Save Restaurant</button>
+  </form>
+  <button class="btn btn-default" {{action 'hideRestaurantForm'}}>Cancel</button>
 {{else}}
   <button class="btn btn-default" {{action 'showRestaurantForm'}}>Add a new restaurant</button>
 {{/if}}
