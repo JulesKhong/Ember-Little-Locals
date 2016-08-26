@@ -51,3 +51,7 @@ img {
 .col-sm-3 {
   border-right: 1px solid whitesmoke;
 }
+
+.fav {
+  font-weight: bold;
+}
