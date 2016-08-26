@@ -1,0 +1,31 @@
+{ "restaurants": [{
+    "name": "Fritto Misto",
+    "location": "601 Colorado Ave, Santa Monica, CA 90401",
+    "style": "Italian Restaurant",
+    "neighborhood": "Santa Monica",
+    "price": 3,
+    "notes": "Create-your-own-pasta plates hit the spot (and fit your budget) at these family-friendly Hermosa Beach and Santa Monica Italians where customization never tasted so good",
+    "img": "http://fr.discoverlosangeles.com/sites/default/files/media/Hotels/millennium-biltmore-gallery-bar.jpg"
+    },
+    {
+    "name": "M Street Kitchen",
+    "location": "123 Street",
+    "neighborhood": "Santa Monica",
+    "price": "1",
+    "notes": "Laid-back, rustic choice for American comfort food & weekend brunch, with a pet-friendly patio.",
+    "img": "http://www.glamandthecity.co/wp-content/uploads/2016/03/img_2358-1.jpg"
+    },
+    {
+    "name": "True Food Kitchen",
+    "location": "456 Street",
+    "neighborhood": "Santa Monica",
+    "price": "5",
+    "notes": "Relaxed, eco-chic chain serving health-conscious fare, including vegan options, plus cocktails.",
+    "img": "http://i.huffpost.com/gen/1339487/thumbs/o-TERRANEA-RESORT-570.jpg?2"
+    }],
+  "reviews": [{
+    "rating": "5",
+    "comments": "I loved this place! so good, and my kid thought it was awesome. The whole family enjoyed the meal, and I felt like a grown up again",
+    "price": "5"
+    }]
+}
